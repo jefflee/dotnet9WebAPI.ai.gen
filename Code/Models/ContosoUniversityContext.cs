@@ -3,6 +3,7 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using dotnet9WebAPI.ai.gen.Models;
 
 namespace dotnet9WebAPI.ai.gen.Models;
 
@@ -20,4 +21,6 @@ public partial class ContosoUniversityContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+    public DbSet<Course> Courses { get; set; }
 }

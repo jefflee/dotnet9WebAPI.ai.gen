@@ -1,6 +1,36 @@
-@dotnet9WebAPI.ai.gen_HostAddress = http://localhost:5131
+@HostAddress = http://localhost:5131
 
-GET {{dotnet9WebAPI.ai.gen_HostAddress}}/weatherforecast/
+GET {{HostAddress}}/weatherforecast/
 Accept: application/json
 
-###
+### Get all courses
+GET {{HostAddress}}/Course
+Accept: application/json
+
+### Get course by id
+GET {{HostAddress}}/Course/1
+Accept: application/json
+
+### Create a new course
+POST {{HostAddress}}/Course
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Sample Course",
+  "credits": 3
+}
+
+### Update a course
+PUT {{HostAddress}}/Course/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Updated Course",
+  "credits": 4
+}
+
+### Delete a course
+DELETE {{HostAddress}}/Course/1
+Accept: application/json
