@@ -1,0 +1,16 @@
+{
+    "github.copilot.chat.codeGeneration.instructions": [],
+    "github.copilot.chat.reviewSelection.instructions": [
+        {
+            "file": ".copilot-review-instructions.md"
+        }
+    ],
+    "github.copilot.chat.commitMessageGeneration.instructions": [
+        {
+            "file": ".copilot-commit-message-instructions.md"
+        }
+    ],
+    "chat.promptFilesLocations": {
+        "Code/.github/prompts": true
+    }
+}
